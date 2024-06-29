@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/16b10f7f18.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>INSTAGRAM-fEEDD</title>
+</head>
+
+<body>
+  <!--Inicio Navbar-->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid mx-5 px-5">
+      <a class="navbar-brand d-flex justify-content-center"><i class="fa-brands fa-instagram" style="font-size: 1.5em;"></i>
+        Instagram
+      </a>
+      <!--Inicio del Modal-->
+      <!-- Button trigger modal -->
+      <div>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <!--Inicio del Dropdown-->
+        <div class="btn-group me-5" role="group">
+          <button type="button" class="btn btn-secondar dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu me-3">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+        <!--Fin del Dropdown-->
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title fs-5" id="exampleModalLabel">
+                Create a new Post
+              </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Caption:</p>
+              <div class="form-floating">
+                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                <button type="button" class="btn btn-outline-secondary mt-2">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary mt-2">
+                  <i class="fa-solid fa-location-dot"></i>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin del Modal-->
+    </div>
+  </nav>
+  <!--Fin Navbar-->
+
+  <!--Inicio Grid-->
+  <ul class="nav nav-pills d-flex justify-content-center mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active box-shadow-none" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+        <i class="fa-solid fa-square"></i>
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="card-group">
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1719295612026-47e327b2c865?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="1" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1719242086474-426087b8e0d3?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="2" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="3" />
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1719217469234-bb53c12ed515?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="1" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1718198497330-08b58f749d4b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="2" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1719258264857-9c380d840a1a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="3" />
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1719268921704-202ac52a5308?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="1" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1718204437243-a644894df78d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="2" />
+        </div>
+        <div class="card card m-1 border-0">
+          <img
+            src="https://images.unsplash.com/photo-1718985342149-7178154e0aee?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="3" />
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="container-fluid bg-light">
+        <div class="row">
+          <div class="card my-2 mx-auto" style="width: 25rem">
+            <div class="name d-flex justify-content-between align-items-center p-2">
+              <b>Purple flowers</b>
+              <span>09/20</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1719295612026-47e327b2c865?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="..." />
+            <div class="card-body p-2">
+              <b>12233656 Likes</b>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card my-2 mx-auto" style="width: 25rem">
+            <div class="name d-flex justify-content-between align-items-center p-2">
+              <b>Work Space</b>
+              <span>10/23</span>
+            </div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1718198497330-08b58f749d4b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="..." />
+            <div class="card-body p-2">
+              <b>543678 Likes</b>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card my-2 mx-auto" style="width: 25rem">
+            <div class="name d-flex justify-content-between align-items-center p-2">
+              <b>Coffee</b>
+              <span>15/24</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1719268921704-202ac52a5308?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="..." />
+            <div class="card-body p-2">
+              <b>986354732 Likes</b>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
